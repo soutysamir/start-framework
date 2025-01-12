@@ -1,0 +1,52 @@
+<section class="container">
+  <h1 class="text-center text-uppercase p-2 color-dark">portfolio component</h1>
+  <div class="text-center color-dark title-line">
+    <i class="fa-solid fa-star"></i>
+  </div>
+  <div class="row g-4 m-3">
+    @for (image of imagesList; track $index) {
+    <div class="col-md-4">
+      <div class="inner">
+        <img class="w-100 rounded-4" [src]="image" alt="your photo" />
+        <div
+          (click)="showDetails(image)"
+          data-bs-toggle="modal"
+          data-bs-target="#exampleModal"
+          class="layer rounded-4"
+        >
+          <i class="fa-solid fa-plus"></i>
+        </div>
+      </div>
+    </div>
+    } @for (image of imagesList; track $index) {
+    <div class="col-md-4">
+      <div class="inner">
+        <img class="w-100 rounded-4" [src]="image" alt="your photo" />
+        <div
+          (click)="showDetails(image)"
+          data-bs-toggle="modal"
+          data-bs-target="#exampleModal"
+          class="layer rounded-4"
+        >
+          <i class="fa-solid fa-plus"></i>
+        </div>
+      </div>
+    </div>
+    }
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <img class="w-100" [src]="photoDisplay" alt="your photo" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

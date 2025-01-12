@@ -1,0 +1,51 @@
+.color-dark {
+  color: #2c3e50;
+}
+.title-line {
+  position: relative;
+}
+
+.title-line::before {
+  content: "";
+  position: absolute;
+  background-color: #2c3e50;
+  bottom: 10px;
+  height: 4px;
+  width: 80px;
+  right: 42%;
+}
+.title-line::after {
+  content: "";
+  position: absolute;
+  background-color: #2c3e50;
+  bottom: 10px;
+  height: 4px;
+  width: 80px;
+  left: 42%;
+}
+.m-20 {
+  margin-inline-start: 20%;
+}
+.form-control:focus {
+  border-color: none;
+  box-shadow: none;
+}
+.form-control {
+  border: none;
+  border-bottom: solid 1px #9daaa7;
+}
+
+.hidden-label {
+  position: relative;
+  top: 30px;
+  opacity: 0;
+}
+
+.hidden-label.show {
+  top: 0;
+  opacity: 1;
+  transition: 0.5s ease-in-out;
+}
+.bg-yellow {
+  background-color: yellow;
+}

@@ -1,0 +1,25 @@
+.home {
+  background-color: #9f5255;
+}
+.title-line {
+  position: relative;
+}
+
+.title-line::before {
+  content: "";
+  position: absolute;
+  background-color: #fff;
+  bottom: 10px;
+  height: 4px;
+  width: 80px;
+  right: 43%;
+}
+.title-line::after {
+  content: "";
+  position: absolute;
+  background-color: #fff;
+  bottom: 10px;
+  height: 4px;
+  width: 80px;
+  left: 43%;
+}

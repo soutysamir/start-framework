@@ -1,0 +1,76 @@
+<section class="container">
+  <h1 class="text-center text-uppercase fw-bolder p-2 color-dark">
+    conatct section
+  </h1>
+  <div class="text-center color-dark title-line">
+    <i class="fa-solid fa-star"></i>
+  </div>
+  <div class="container w-75 m-5">
+    <div class="mb-3 m-20">
+      <label
+        for="UserName "
+        class="form-label hidden-label text-danger"
+        [class.show]="formData.userName.length > 0"
+        >User Name:</label
+      >
+      <input
+        [(ngModel)]="formData.userName"
+        type="text"
+        class="form-control"
+        id="UserName"
+        placeholder="UserName"
+      />
+    </div>
+    <div class="mb-3 m-20">
+      <label
+        for="UserAge "
+        class="form-label hidden-label text-danger"
+        [class.show]="formData.userAge.length > 0"
+        >User Age:</label
+      >
+
+      <input
+        [(ngModel)]="formData.userAge"
+        type="text"
+        class="form-control"
+        id="UserAge"
+        placeholder="UserAge"
+      />
+    </div>
+    <div class="mb-3 m-20">
+      <label
+        for="emailValue "
+        class="form-label hidden-label text-danger"
+        [class.show]="formData.userEmail.length > 0"
+        >Email address:</label
+      >
+
+      <input
+        [(ngModel)]="formData.userEmail"
+        type="email"
+        class="form-control"
+        id="emailValue"
+        placeholder="UserEmail"
+      />
+    </div>
+
+    <div class="mb-4 m-20">
+      <label
+        for="UserPassword "
+        class="form-label hidden-label text-danger"
+        [class.show]="formData.userPassword.length > 0"
+      >
+        user Password:</label
+      >
+      <input
+        [(ngModel)]="formData.userPassword"
+        type="password"
+        class="form-control"
+        id="UserPassword"
+        placeholder="UserPassword"
+      />
+    </div>
+
+    <button type="button" class="btn btn-danger mb-5 m-20">Send Message</button>
+  </div>
+</section>
